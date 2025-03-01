@@ -7,5 +7,13 @@ export default StyleSheet.create((theme, runtime) => ({
     paddingLeft: runtime.insets.left + 16,
     paddingRight: runtime.insets.right + 16,
     paddingBottom: runtime.insets.ime + runtime.insets.bottom + 64,
+
+    variants: {
+      simulated: {
+        true: {
+          paddingBottom: 250 + runtime.insets.bottom + 64,
+        },
+      },
+    },
   },
 }));
